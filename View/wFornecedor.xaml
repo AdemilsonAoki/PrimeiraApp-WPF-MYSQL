@@ -1,0 +1,62 @@
+﻿<Window x:Name="wFornecedor" x:Class="PrimeiraAPP.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrimeiraAPP.View"
+       
+        mc:Ignorable="d"
+        Title="MainWindow" Height="662.598" Width="803" AutomationProperties.Name="Menu" Loaded="wFornecedor_Loaded">
+    <Grid Margin="0,0,2,-5" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblId" Content="Id" HorizontalAlignment="Left" Margin="32,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,-0.699"/>
+        <Label Name="lblNome" Content="Nome Fantasia" HorizontalAlignment="Left" Margin="136,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,-0.699"/>
+        <Label Name="lblInscricao" Content="Inscrição Estadual" HorizontalAlignment="Left" Margin="32,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,-0.699"/>
+        <Label Name="lblCnpj" Content="CNPJ" HorizontalAlignment="Left" Margin="188,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,-0.699"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="32,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="136,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="603"/>
+        <TextBox x:Name="txtInscricaoEstadual" HorizontalAlignment="Left" Height="23" Margin="32,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txtCnpj" HorizontalAlignment="Left" Height="23" Margin="188,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtCnpj_TextChanged" MaxLength="18"/>
+        <RadioButton x:Name="rbFornecedorAtivo" Content="Fornecedor ativo" HorizontalAlignment="Left" Margin="360,126,0,0" VerticalAlignment="Top"/>
+        <RadioButton  x:Name="rbFornecedorInativo" Content="Fornecedor inativo" HorizontalAlignment="Left" Margin="527,126,0,0" VerticalAlignment="Top"/>
+        <Label Content="CEP" HorizontalAlignment="Left" Margin="32,178,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCEp" HorizontalAlignment="Left" Height="24" Margin="32,209,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblNome_Copy" Content="Rua" HorizontalAlignment="Left" Margin="188,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.877,-0.699"/>
+        <TextBox x:Name="txtRua" HorizontalAlignment="Left" Height="23" Margin="183,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="435"/>
+        <Label Content="Numero" HorizontalAlignment="Left" Margin="643,178,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Height="23" Margin="643,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Bairro" HorizontalAlignment="Left" Margin="32,256,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.513,-0.808"/>
+        <TextBox x:Name="txtBairro" HorizontalAlignment="Left" Height="24" Margin="32,286,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEstado" HorizontalAlignment="Left" Height="23" Margin="448,285,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="62"/>
+        <TextBox x:Name="txtComplemento" HorizontalAlignment="Left" Height="24" Margin="544,284,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="224" RenderTransformOrigin="0.012,0.458"/>
+        <TextBox x:Name="txtCidade" HorizontalAlignment="Left" Height="23" Margin="183,287,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="233"/>
+        <Label Content="Cidade" HorizontalAlignment="Left" Margin="188,256,0,0" VerticalAlignment="Top"/>
+        <Label Content="Estado" HorizontalAlignment="Left" Margin="448,254,0,0" VerticalAlignment="Top"/>
+        <Label Content="Complemento" HorizontalAlignment="Left" Margin="546,254,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.029,0.462"/>
+        <Button x:Name="btnAdicionar" Content="Adicionar" HorizontalAlignment="Left" Margin="32,373,0,0" VerticalAlignment="Top" Width="75" Click="btnAdicionar_Click"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="142,373,0,0" VerticalAlignment="Top" Width="76" Click="btnAlterar_Click"/>
+        <Button x:Name="btnConsultar" Content="Consultar" HorizontalAlignment="Left" Margin="252,373,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-0.08,1.125" Click="btnConsultar_Click"/>
+        <CheckBox x:Name="ckbInativo" Content="Inativo" HorizontalAlignment="Left" Margin="344,375,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dgFornecedor" Margin="32,419,31,10" AutoGenerateColumns="True" SelectionChanged="dgFornecedor_SelectionChanged" ClipboardCopyMode="None" EnableRowVirtualization="False" >
+            <DataGrid.ContextMenu>
+                <ContextMenu/>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+
+
+
+
+
+
+
+    </Grid>
+
+
+
+
+
+</Window>
+    
+    
